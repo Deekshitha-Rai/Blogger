@@ -11,8 +11,6 @@ export class Router {
     router: any;
     app: any;
 
-    constructor() {
-    }
     public requestRouter(apiPath) {
         apiPath.use(bodyParser.urlencoded({ extended: false }))
         apiPath.use(bodyParser.json())

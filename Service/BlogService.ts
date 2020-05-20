@@ -26,11 +26,10 @@ export class BlogService {
 
     private static createRequest(req) {
         return {
-            
+            "blogID": req.blogId,
+            "creator": req.creator,
             "blogData": req.blogData,
-            "createdOn": new Date(req.createdOn),
-            "lastModified": new Date(req.lastModified),
-            "likes" : req.likes ? req.likes : 0,
+            "likes" : req.likes
         }
     }
 }
